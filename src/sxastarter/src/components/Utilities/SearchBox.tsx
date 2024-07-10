@@ -1,9 +1,3 @@
-const SearchBox = () => {
-  return (
-    <>
-      <input className="input-field" placeholder="credit card" />
-    </>
-  );
+export const Default = (): JSX.Element => {
+  return <input type="text" placeholder="search..." />;
 };
-
-export default SearchBox;
