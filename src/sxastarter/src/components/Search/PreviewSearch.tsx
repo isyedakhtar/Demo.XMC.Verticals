@@ -1,6 +1,6 @@
 import type { PreviewSearchInitialState, PreviewSearchWidgetQuery } from '@sitecore-search/react';
 import { useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
-
+import type { PreviewSearchInitialState, PreviewSearchWidgetQuery } from '@sitecore-search/react';
 import {
   FilterAnd,
   FilterEqual,
@@ -29,9 +29,8 @@ export const PreviewSearch = ({ defaultItemsPerPage }: Props) => {
   const [isSearching, setIsSearching] = useState<boolean>();
   const sources = process.env.NEXT_PUBLIC_SEARCH_SOURCES;
   const { sitecoreContext } = useSitecoreContext();
-
-  PageController.getContext().setLocale({ country: 'au', language: 'en' }); //this should be handeled thgough a custom hook may be
-
+  PageController.getContext().setLocale({ country: 'au', language: 'en' });
+  
   const {
     actions: { onKeyphraseChange },
     queryResult: { data: { content: previewArticles = [] } = {} } = {},
@@ -55,6 +54,11 @@ export const PreviewSearch = ({ defaultItemsPerPage }: Props) => {
       setSearch(keyphrase);
       onKeyphraseChange({ keyphrase: keyphrase });
     }
+    const keyphrase = e.target.value;
+    setIsSearching(true);
+    if (keyphrase.length === 0) setIsSearching(false);
+    setSearch(keyphrase);
+    onKeyphraseChange({ keyphrase: keyphrase });
   }
 
   const handleBlur = () => {

@@ -10,6 +10,7 @@ import {
 } from '@sitecore-search/react';
 import Link from 'next/link';
 import { useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
+
 type ArticleModel = {
   id: string;
   type?: string;
@@ -61,7 +62,7 @@ export const SearchResultsWidget = (props: ArticleSearchResultsProps): JSX.Eleme
   function handleResultClick(result: ArticleModel): void {
     if (result.url) window.location.href = result.url;
   }
-
+  
   if (sitecoreContext.pageEditing || !articles?.length)
     return (
       <div ref={widgetRef} className="search-results-container">
