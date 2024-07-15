@@ -62,7 +62,6 @@ export const SearchResultsWidget = (props: ArticleSearchResultsProps): JSX.Eleme
   function handleResultClick(result: ArticleModel): void {
     if (result.url) window.location.href = result.url;
   }
-  
   if (sitecoreContext.pageEditing || !articles?.length)
     return (
       <div ref={widgetRef} className="search-results-container">
