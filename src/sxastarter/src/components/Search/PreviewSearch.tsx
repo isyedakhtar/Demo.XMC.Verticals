@@ -1,4 +1,3 @@
-import type { PreviewSearchInitialState, PreviewSearchWidgetQuery } from '@sitecore-search/react';
 import { useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
 import type { PreviewSearchInitialState, PreviewSearchWidgetQuery } from '@sitecore-search/react';
 import {
@@ -30,7 +29,6 @@ export const PreviewSearch = ({ defaultItemsPerPage }: Props) => {
   const sources = process.env.NEXT_PUBLIC_SEARCH_SOURCES;
   const { sitecoreContext } = useSitecoreContext();
   PageController.getContext().setLocale({ country: 'au', language: 'en' });
-  
   const {
     actions: { onKeyphraseChange },
     queryResult: { data: { content: previewArticles = [] } = {} } = {},
