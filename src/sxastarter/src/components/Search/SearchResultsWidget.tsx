@@ -72,7 +72,9 @@ export const SearchResultsWidget = (props: ArticleSearchResultsProps): JSX.Eleme
 
   return (
     <div ref={widgetRef} className="search-results-container">
-      <h1>Search Results for {props.keyphrase}</h1>
+      <h1>
+        Search Results for <span className="query"> {props.keyphrase} </span>
+      </h1>
       {articles.map((result, index) => (
         <div key={index} className="result-item" onClick={() => handleResultClick(result)}>
           <h2> {result.name}</h2>
