@@ -1,0 +1,13 @@
+﻿---
+ID: "5706c51d-d898-452f-a748-a55684ea756f"
+Parent: "acc42d00-011b-43c4-b461-2f4a8f87bc22"
+Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
+Path: /sitecore/content/Verticals/Financial/Home/Search/Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "613297c9-15e0-4a4c-bca2-40deed001e3f"

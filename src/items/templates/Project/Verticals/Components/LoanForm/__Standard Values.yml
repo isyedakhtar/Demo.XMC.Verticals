@@ -1,0 +1,13 @@
+﻿---
+ID: "c387ddfa-df11-46d0-8808-60dc761e5f01"
+Parent: "5e27b810-83a8-4b1a-aabd-5cd1d0e8e8ea"
+Template: "5e27b810-83a8-4b1a-aabd-5cd1d0e8e8ea"
+Path: /sitecore/templates/Project/Verticals/Components/LoanForm/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "36e05bea-4ebc-4b25-9b31-4cf2b2216dc9"

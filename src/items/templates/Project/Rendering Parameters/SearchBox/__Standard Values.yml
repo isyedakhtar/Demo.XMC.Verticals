@@ -1,0 +1,13 @@
+﻿---
+ID: "fcc40c70-feac-4c30-ace6-0560e096f226"
+Parent: "39022355-743a-4e28-846b-9019b6d25c79"
+Template: "39022355-743a-4e28-846b-9019b6d25c79"
+Path: /sitecore/templates/Project/Rendering Parameters/SearchBox/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b1df14c0-5333-455e-832e-166a95fe7ce3"

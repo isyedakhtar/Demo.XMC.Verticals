@@ -1,0 +1,20 @@
+﻿---
+ID: "39022355-743a-4e28-846b-9019b6d25c79"
+Parent: "2ec5161e-4d00-4d3f-afb8-c92c60b7a138"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Rendering Parameters/SearchBox
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: "{A65AEA73-8224-408B-913C-B1CEDAE0C443}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{FCC40C70-FEAC-4C30-ACE6-0560E096F226}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3a82e85f-c93a-479f-bc97-7c10f2de903f"

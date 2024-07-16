@@ -1,0 +1,17 @@
+﻿---
+ID: "a281e6a6-2798-41ef-bf85-490a1b49712b"
+Parent: "5c48bd53-e997-45fc-b318-672cfa349bb3"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Verticals/Financial/Data/SearchBox
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1450
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1f955108-1d76-4c25-a84f-58eff85495ad"

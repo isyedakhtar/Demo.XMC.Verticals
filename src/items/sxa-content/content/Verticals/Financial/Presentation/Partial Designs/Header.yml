@@ -69,13 +69,33 @@ Languages:
     - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
       Hint: __Lock
       Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{5A8BA5B7-58C1-40CF-A14C-F02D4C0C1A25}"
+              p:before="*"
+              s:id="{313B9104-2CE9-40D8-927E-29E24F340FE4}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=11"
+              s:ph="/headless-header/eyebrow-left-0-4" />
+            <r
+              uid="{7C9E1BAD-A136-4711-9220-AB61F227F432}">
+              <p:da
+                name="ds" />
+            </r>
+          </d>
+        </r>
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "749873f3-9fe4-4be3-8bf7-e518f37b5bd3"
+      Value: "1ed3c150-225e-4e00-8a75-9fbccc5b8315"
 - Language: "fr-CA"
   Versions:
   - Version: 1
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "700599f2-83c7-47c9-8b13-41d979eacc08"
+      Value: "3ba706b6-f078-4da1-8afd-691db4ac791e"

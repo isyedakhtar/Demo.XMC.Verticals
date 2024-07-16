@@ -1,0 +1,33 @@
+﻿---
+ID: "58de9304-a063-455f-8a19-2fc867bc813a"
+Parent: "832f1d5d-f834-4a01-a6db-e766be062a28"
+Template: "832f1d5d-f834-4a01-a6db-e766be062a28"
+Path: /sitecore/templates/Project/Verticals/Components/SearchBox/__Standard Values
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: apps/32x32/listmanagement.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "db660103-adbc-4d68-b72a-b2fbcbce4cf1"
+    - ID: "9f01b586-b755-40fd-b500-259be35cc864"
+      Hint: Placeholder
+      Value: Credit card
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "111a810d-f802-4236-a4c1-ee1d2baccbc9"
+    - ID: "9f01b586-b755-40fd-b500-259be35cc864"
+      Hint: Placeholder
+      Value: Apply

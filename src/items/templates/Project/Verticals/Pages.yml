@@ -6,7 +6,7 @@ Path: /sitecore/templates/Project/Verticals/Pages
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 50
+  Value: 0
 Languages:
 - Language: en
   Versions:
@@ -14,4 +14,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1e5ab85f-c6ef-472f-94f5-9a5c1f4506df"
+      Value: "a32440f3-ed3b-46ca-b5a6-4117e33fc472"

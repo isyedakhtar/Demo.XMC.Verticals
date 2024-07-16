@@ -1,0 +1,28 @@
+﻿---
+ID: "30b095b9-5715-4c66-8d58-5d2604c5e58f"
+Parent: "4702d241-fc74-430a-95ab-73566612cb34"
+Template: "1105b8f8-1e00-426b-bf1f-c840742d827b"
+Path: /sitecore/content/Verticals/Financial/Presentation/Page Designs/Search Page
+SharedFields:
+- ID: "0966b999-0d0e-4278-acc9-9da69d461fe6"
+  Hint: PartialDesigns
+  Value: "{3DB7D8C4-D4EF-4AF1-BD48-A0F25C3D7872}|{8BE90AA0-BEFE-41D3-B5AA-1BD3ECD015EF}|{2FA09ECC-E4F8-4A1E-AA8C-43768EC36B5B}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{034EDBA8-6196-440A-9609-F804A98DF7A5}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c87ef0e1-ee1c-46f5-8b70-3cad6afdde2a"
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5ea025d3-cb61-4b3a-bb76-5de676f7e819"

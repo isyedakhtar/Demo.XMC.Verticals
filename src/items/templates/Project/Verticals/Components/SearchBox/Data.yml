@@ -1,0 +1,24 @@
+﻿---
+ID: "ee686c49-6040-450e-8bd3-dd0fc463feb9"
+Parent: "832f1d5d-f834-4a01-a6db-e766be062a28"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Verticals/Components/SearchBox/Data
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5519d64d-50f1-43e0-b7b5-e97502164c72"
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2512f300-217f-4ba3-9cb7-3d52cf19e2fc"

@@ -1,0 +1,26 @@
+﻿---
+ID: "7b4f6848-0586-47a0-86db-d1f9874887ea"
+Parent: "19cdcc28-2f05-4954-b71d-845057737a1a"
+Template: "19cdcc28-2f05-4954-b71d-845057737a1a"
+Path: /sitecore/templates/Project/Verticals/Components/SearchResults/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ff89fe7f-1ca2-4347-8d22-d5d03a241c06"
+    - ID: "b42887ed-0242-4206-a310-32c13e4e0d84"
+      Hint: EmptyResultsMessage
+      Value: No results found. Please change your search criteria.
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cad99a15-3a83-432e-b5c9-ef582879222b"
+    - ID: "b42887ed-0242-4206-a310-32c13e4e0d84"
+      Hint: EmptyResultsMessage
+      Value: Lorem ipsum dolor sit amet
