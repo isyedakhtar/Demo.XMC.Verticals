@@ -1,0 +1,13 @@
+﻿---
+ID: "c66e1fdd-868d-492b-a2f5-56966a75f5ab"
+Parent: "5d45aebe-4a1b-454b-a09c-11cc22df4991"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: /sitecore/content/Verticals/Financial/Presentation/Headless Variants/SearchBox/Default
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0271efcd-ab90-4891-a61e-d3c349e76583"
