@@ -10,6 +10,8 @@ import {
 } from '@sitecore-search/react';
 import Link from 'next/link';
 import { useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
+import { MouseEvent } from 'react';
+import { useRouter } from 'next/navigation';
 
 type ArticleModel = {
   id: string;
@@ -26,17 +28,20 @@ type ArticleSearchResultsProps = {
   defaultSortType?: SearchResultsStoreState['sortType'];
   defaultPage?: SearchResultsStoreState['page'];
   defaultItemsPerPage?: SearchResultsStoreState['itemsPerPage'];
-  keyphrase: SearchResultsStoreState['keyphrase'];
+  defaultKeyphrase?: SearchResultsStoreState['keyphrase'];
   emptyMessage: string;
 };
 
 type InitialState = SearchResultsInitialState<'itemsPerPage' | 'keyphrase' | 'page' | 'sortType'>;
 const sources = process.env.NEXT_PUBLIC_SEARCH_SOURCES;
 
-export const SearchResultsWidget = (props: ArticleSearchResultsProps): JSX.Element => {
+export const SearchResultsComponent = (props: ArticleSearchResultsProps): JSX.Element => {
+  const router = useRouter();
   const { sitecoreContext } = useSitecoreContext();
+
   const {
     widgetRef,
+    actions: { onItemClick },
     queryResult: { isLoading, data: { content: articles = [] } = {} },
   } = useSearchResults<ArticleModel, InitialState>({
     query: (query: SearchResultsWidgetQuery) => {
@@ -48,7 +53,7 @@ export const SearchResultsWidget = (props: ArticleSearchResultsProps): JSX.Eleme
       sortType: 'featured_asc',
       page: 1,
       itemsPerPage: 10,
-      keyphrase: props.keyphrase,
+      keyphrase: props.defaultKeyphrase ?? '',
     },
   });
 
@@ -59,34 +64,55 @@ export const SearchResultsWidget = (props: ArticleSearchResultsProps): JSX.Eleme
     return <div> Loading ... </div>;
   }
 
-  function handleResultClick(result: ArticleModel): void {
-    if (result.url) window.location.href = result.url;
+  function handleResultClick(
+    e: MouseEvent<HTMLAnchorElement, MouseEvent>,
+    result: ArticleModel,
+    index: number
+  ): void {
+    e.preventDefault();
+    if (result.url) {
+      onItemClick({ id: result.id, index: index, sourceId: result.source_id });
+      router.push(getLocalUrl(result.url) ?? '');
+    }
   }
   if (sitecoreContext.pageEditing || !articles?.length)
     return (
       <div ref={widgetRef} className="search-results-container">
-        <h1>Searching for {props.keyphrase}</h1>
+        <h1>
+          Search Results for <span className="query"> {props.defaultKeyphrase} </span>
+        </h1>
         <div className="no-results">{props.emptyMessage}</div>
       </div>
     );
 
+  function getLocalUrl(url: string | undefined): string | undefined {
+    if (url && process.env.NODE_ENV === 'development') {
+      return url.replace('https://verticalsdemo-financial.vercel.app/', '/');
+    }
+    return url;
+  }
+
   return (
     <div ref={widgetRef} className="search-results-container">
-      <h1>
-        Search Results for <span className="query"> {props.keyphrase} </span>
-      </h1>
+      {props.defaultKeyphrase && (
+        <h1>
+          Search Results for <span className="query"> {props.defaultKeyphrase} </span>
+        </h1>
+      )}
       {articles.map((result, index) => (
-        <div key={index} className="result-item" onClick={() => handleResultClick(result)}>
+        <div key={index} className="result-item">
           <h2> {result.name}</h2>
           <p>{result.description}</p>
-          <Link href={result.url ?? ''}>Details</Link>
+          <Link href="#" onClick={(e) => handleResultClick(e, result, index)}>
+            Details
+          </Link>
         </div>
       ))}
     </div>
   );
 };
 const SearchResultsStyledWidget = widget(
-  SearchResultsWidget,
+  SearchResultsComponent,
   WidgetDataType.SEARCH_RESULTS,
   'content'
 );

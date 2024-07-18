@@ -1,5 +1,7 @@
 import { useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
-import type { PreviewSearchInitialState, PreviewSearchWidgetQuery } from '@sitecore-search/react';
+import { PreviewSearchInitialState, PreviewSearchWidgetQuery } from '@sitecore-search/react';
+import { useRouter } from 'next/navigation';
+
 import {
   FilterAnd,
   FilterEqual,
@@ -8,7 +10,7 @@ import {
   usePreviewSearch,
   widget,
 } from '@sitecore-search/react';
-import { ChangeEvent, FormEvent, useState } from 'react';
+import { ChangeEvent, FormEvent, useCallback, useState } from 'react';
 
 type ArticleModel = {
   id: string;
@@ -24,14 +26,24 @@ interface Props {
 }
 
 export const PreviewSearch = ({ defaultItemsPerPage }: Props) => {
+  const router = useRouter();
+
+  function getLocalUrl(url: string | undefined): string | undefined {
+    if (url && process.env.NODE_ENV === 'development') {
+      return url.replace('https://verticalsdemo-financial.vercel.app/', '/');
+    }
+    return url;
+  }
+
   const [search, setSearch] = useState<string>('');
   const [isSearching, setIsSearching] = useState<boolean>();
   const sources = process.env.NEXT_PUBLIC_SEARCH_SOURCES;
   const { sitecoreContext } = useSitecoreContext();
   PageController.getContext().setLocale({ country: 'au', language: 'en' });
   const {
-    actions: { onKeyphraseChange },
-    queryResult: { data: { content: previewArticles = [] } = {} } = {},
+    widgetRef,
+    actions: { onItemClick, onKeyphraseChange },
+    queryResult: { isFetching, isLoading, data: { content: previewArticles = [] } = {} },
   } = usePreviewSearch<ArticleModel, InitialState>({
     query: (query: PreviewSearchWidgetQuery) => {
       query
@@ -43,21 +55,24 @@ export const PreviewSearch = ({ defaultItemsPerPage }: Props) => {
       itemsPerPage: defaultItemsPerPage,
     },
   });
-
-  function keypharaseChangeHandler(e: ChangeEvent<HTMLInputElement>): void {
-    if (!sitecoreContext.pageEditing) {
+  const loading = isLoading || isFetching;
+  const keypharaseChangeHandler = useCallback(
+    (e: ChangeEvent<HTMLInputElement>) => {
+      if (!sitecoreContext.pageEditing) {
+        const keyphrase = e.target.value;
+        setIsSearching(true);
+        if (keyphrase.length === 0) setIsSearching(false);
+        setSearch(keyphrase);
+        onKeyphraseChange({ keyphrase: keyphrase });
+      }
       const keyphrase = e.target.value;
       setIsSearching(true);
       if (keyphrase.length === 0) setIsSearching(false);
       setSearch(keyphrase);
       onKeyphraseChange({ keyphrase: keyphrase });
-    }
-    const keyphrase = e.target.value;
-    setIsSearching(true);
-    if (keyphrase.length === 0) setIsSearching(false);
-    setSearch(keyphrase);
-    onKeyphraseChange({ keyphrase: keyphrase });
-  }
+    },
+    [onKeyphraseChange, sitecoreContext.pageEditing]
+  );
 
   const handleBlur = () => {
     setTimeout(() => {
@@ -77,18 +92,14 @@ export const PreviewSearch = ({ defaultItemsPerPage }: Props) => {
     //router.push(`/en/search?q=${search}`);
   }
 
-  function handleRedirect(article: ArticleModel): void {
-    window.location.href = article.url;
+  function handleRedirect(article: ArticleModel, index: number): void {
+    onItemClick({ id: article.id, index, sourceId: article.source_id });
+    router.push(getLocalUrl(article.url) ?? '');
   }
 
   return (
-    <>
-      <form
-        className="search-container"
-        onSubmit={handleSearchFormSubmit}
-        onBlur={handleBlur}
-        onFocus={inputFocus}
-      >
+    <div ref={widgetRef} className="search-container">
+      <form onSubmit={handleSearchFormSubmit} onBlur={handleBlur} onFocus={inputFocus}>
         <input
           value={search}
           onChange={keypharaseChangeHandler}
@@ -96,12 +107,12 @@ export const PreviewSearch = ({ defaultItemsPerPage }: Props) => {
           placeholder="search here..."
         />
 
-        {isSearching && previewArticles && previewArticles?.length >= 1 && (
+        {!loading && isSearching && previewArticles && previewArticles?.length >= 1 && (
           <ul className="results-list">
             {previewArticles.map(
               (article, index) =>
                 article.name && (
-                  <li key={index} onClick={() => handleRedirect(article)}>
+                  <li key={index} onClick={() => handleRedirect(article, index)}>
                     {article.name}
                   </li>
                 )
@@ -109,7 +120,7 @@ export const PreviewSearch = ({ defaultItemsPerPage }: Props) => {
           </ul>
         )}
       </form>
-    </>
+    </div>
   );
 };
 const PreviewSearchWidget = widget(PreviewSearch, WidgetDataType.PREVIEW_SEARCH, 'content');
