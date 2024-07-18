@@ -9,7 +9,6 @@ import {
   FilterAnd,
 } from '@sitecore-search/react';
 import Link from 'next/link';
-import { MouseEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import { useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
 
@@ -28,7 +27,7 @@ type RecommendationProps = {
   itemsToDisplay?: number;
 };
 type InitialState = RecommendationInitialState<'itemsPerPage'>;
-const DEFAULT_IMG_URL = 'https://placehold.co/500x300?text=No%20Image';
+//const DEFAULT_IMG_URL = 'https://placehold.co/500x300?text=No%20Image';
 const Images = [
   'https://edge.sitecorecloud.io/sitecore2b8f4-partnerdemo8ca0-dev5eb6-ccc8/media/Project/Verticals/Financial/Mockups/three-col-promo-1.png?h=303&iar=0&w=460',
   'https://edge.sitecorecloud.io/sitecore2b8f4-partnerdemo8ca0-dev5eb6-ccc8/media/Project/Verticals/Financial/Mockups/three-col-promo-2.png?h=303&iar=0&w=460',
@@ -56,11 +55,7 @@ const Recommendations = (props: RecommendationProps) => {
   });
 
   const loading = isLoading || isFetching;
-  function handleResultClick(
-    e: MouseEvent<HTMLAnchorElement, MouseEvent>,
-    result: ArticleModel,
-    index: number
-  ): void {
+  function handleResultClick(result: ArticleModel, index: number): void {
     onItemClick({ id: result.id, index: index, sourceId: result.source_id });
     router.push(result.url ?? '');
   }
@@ -86,7 +81,7 @@ const Recommendations = (props: RecommendationProps) => {
                   <Link
                     className={`button button-main`}
                     href="#"
-                    onClick={(e) => handleResultClick(e, result, index)}
+                    onClick={() => handleResultClick(result, index)}
                   >
                     Details
                   </Link>
