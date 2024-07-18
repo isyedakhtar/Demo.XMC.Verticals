@@ -1,0 +1,23 @@
+﻿---
+ID: "5e27b810-83a8-4b1a-aabd-5cd1d0e8e8ea"
+Parent: "33429731-c234-4706-af63-439aeb11d72b"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Verticals/Components/LoanForm
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: DemoIcons/32x32/application.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: "{AE920CE6-5C6E-4842-B54C-E4B516DC0752}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{C387DDFA-DF11-46D0-8808-60DC761E5F01}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c941f7a7-0f15-45d2-a03e-f334d67bfc51"

@@ -26,7 +26,7 @@ SharedFields:
     {AC1A27CA-6BF3-4D23-915E-668326D52CF1}
 - ID: "2b2fe9fd-78a6-40eb-b9f9-28409d8d3700"
   Hint: SitemapMediaItems
-  Value: 
+  Value: "{ACEE557A-90F4-40D2-B34F-B7587C5A3A41}"
 - ID: "33d9005e-1f71-415f-b107-53b965c3b037"
   Hint: SiteMediaLibrary
   Value: "{EEE2C54E-1BC8-4B72-BB26-1EA80C093A30}"
@@ -40,4 +40,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "f4798603-0134-4864-8ebf-6e567b5324bc"
+      Value: "7a229079-0980-44ca-bc46-40a5716f5b68"

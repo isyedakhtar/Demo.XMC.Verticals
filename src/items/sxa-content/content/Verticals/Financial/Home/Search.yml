@@ -1,0 +1,69 @@
+﻿---
+ID: "acc42d00-011b-43c4-b461-2f4a8f87bc22"
+Parent: "b2a38fb8-2e85-4d58-afe5-c12beccbee3a"
+Template: "65cd3ae3-34af-4111-abd9-39c3a7c08ed5"
+Path: /sitecore/content/Verticals/Financial/Home/Search
+SharedFields:
+- ID: "1fbc6a49-6281-48ee-87e9-a3970b145adb"
+  Hint: NavigationFilter
+  Value: |
+    {E0A2A027-0932-4878-A7D6-0416D5263EFB}
+    {500AE4C0-FA7B-463F-8149-EFFF7F044101}
+    {A0E7FF57-6994-4B09-AA21-104239628D5A}
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E9B6C600-C6E8-4867-BCB7-8B0DC5F19840}"
+- ID: "a84082c9-7112-4fe1-9401-24c5d5ff34a4"
+  Hint: BackgroundImage
+  Value: |
+    <image mediaid="0a676ec0-8e42-4060-ab50-40bad4accc00" />
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 650
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Search
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{FDC58102-913E-4C3A-9090-E7DBB71A5C48}"
+              p:before="*"
+              s:ds="local:/Data/SearchResults 1"
+              s:id="{7AE95748-C049-41CD-B222-D22C36442A39}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BFD5353DB-3F57-4EFB-8586-511BA91DE16F%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+              s:ph="/headless-main/sxa-search-content/background-page-content-0-1" />
+            <r
+              uid="{D94FA25C-6F68-4C39-BC66-9383337AA4FF}"
+              p:after="*[1=2]"
+              s:ds="local:/Data/SearchResults 2"
+              s:id="{7AE95748-C049-41CD-B222-D22C36442A39}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B00C85317-C460-4640-8D09-0F9B12B334B3%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles=recommendations-panel&amp;DynamicPlaceholderId=2"
+              s:ph="/headless-main/sxa-search-content/page-navigation-0-1" />
+          </d>
+        </r>
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{C8FF2A20-ABA6-409B-AD69-955CD5219D07}"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Searchs
+    - ID: "584d07e7-07d0-4bbe-bac6-05f0e698cd37"
+      Hint: Title
+      Value: 
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "278bfa89-b91a-4e4d-ba46-df4d7ab0b603"

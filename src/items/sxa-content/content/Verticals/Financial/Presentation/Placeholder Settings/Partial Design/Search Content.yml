@@ -1,0 +1,17 @@
+﻿---
+ID: "df5b57f3-7b8a-4739-af0a-9b1276513ca9"
+Parent: "9c4c36b7-f63a-4a3f-a19b-fd071212a6dc"
+Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
+Path: /sitecore/content/Verticals/Financial/Presentation/Placeholder Settings/Partial Design/Search Content
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "sxa-search-content"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e317ae33-2e91-4d02-85cd-62d5a9979f49"

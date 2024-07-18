@@ -1,0 +1,13 @@
+﻿---
+ID: "0d7ac3f1-99ba-483c-aa7d-c1ad25d49967"
+Parent: "195ddd73-2de8-49e0-95e4-e419b7d66891"
+Template: "d885df8c-b2d6-4007-b34b-2bbafb527304"
+Path: /sitecore/content/Verticals/Financial/Presentation/Partial Designs/Header/Data/Image 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "123f7361-00f5-4392-aba8-3f8ca3fa8d3e"

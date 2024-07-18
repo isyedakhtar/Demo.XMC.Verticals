@@ -1,0 +1,17 @@
+﻿---
+ID: "00c85317-c460-4640-8d09-0f9b12b334b3"
+Parent: "a6ae9c98-c72a-44f3-be74-0ba734958517"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: /sitecore/content/Verticals/Financial/Presentation/Headless Variants/SearchResults/SearchRecommendations
+SharedFields:
+- ID: "696c70e2-eb4e-425d-81e4-802bab6a03cf"
+  Hint: AllowedInTemplates
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7500603d-6b81-47f5-98be-b90a1d5519a0"
