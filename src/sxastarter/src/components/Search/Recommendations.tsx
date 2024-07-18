@@ -11,6 +11,7 @@ import {
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
+import { MouseEvent } from 'react';
 
 type ArticleModel = {
   id: string;
@@ -55,10 +56,15 @@ const Recommendations = (props: RecommendationProps) => {
   });
 
   const loading = isLoading || isFetching;
-  function handleResultClick(result: ArticleModel, index: number): void {
+  const handleResultClick = (
+    e: MouseEvent<HTMLAnchorElement>,
+    result: ArticleModel,
+    index: number
+  ): void => {
+    e.preventDefault();
     onItemClick({ id: result.id, index: index, sourceId: result.source_id });
     router.push(result.url ?? '');
-  }
+  };
 
   if (sitecoreContext.pageEditing) {
     return <div>[Placeholder for recommendations. Search recommendations will display here]</div>;
@@ -81,7 +87,7 @@ const Recommendations = (props: RecommendationProps) => {
                   <Link
                     className={`button button-main`}
                     href="#"
-                    onClick={() => handleResultClick(result, index)}
+                    onClick={(e) => handleResultClick(e, result, index)}
                   >
                     Details
                   </Link>

@@ -65,7 +65,7 @@ export const SearchResultsComponent = (props: ArticleSearchResultsProps): JSX.El
   }
 
   function handleResultClick(
-    e: MouseEvent<HTMLAnchorElement, MouseEvent>,
+    e: MouseEvent<HTMLAnchorElement>,
     result: ArticleModel,
     index: number
   ): void {
