@@ -30,9 +30,9 @@ type RecommendationProps = {
 type InitialState = RecommendationInitialState<'itemsPerPage'>;
 //const DEFAULT_IMG_URL = 'https://placehold.co/500x300?text=No%20Image';
 const Images = [
-  'https://edge.sitecorecloud.io/sitecore2b8f4-partnerdemo8ca0-dev5eb6-ccc8/media/Project/Verticals/Financial/Mockups/three-col-promo-1.png?h=303&iar=0&w=460',
-  'https://edge.sitecorecloud.io/sitecore2b8f4-partnerdemo8ca0-dev5eb6-ccc8/media/Project/Verticals/Financial/Mockups/three-col-promo-2.png?h=303&iar=0&w=460',
-  'https://edge.sitecorecloud.io/sitecore2b8f4-partnerdemo8ca0-dev5eb6-ccc8/media/Project/Verticals/Financial/Mockups/three-col-promo-3.png?h=303&iar=0&w=460',
+  'https://edge.sitecorecloud.io/sitecore2b8f4-partnerdemo8ca0-dev5eb6-ccc8/media/Project/Verticals/Financial/Personal/personal-borrowing.jpg?h=400&iar=0&w=600',
+  'https://edge.sitecorecloud.io/sitecore2b8f4-partnerdemo8ca0-dev5eb6-ccc8/media/Project/Verticals/Financial/About-us/small-business-mobile-hero-1800x700.jpg?h=700&iar=0&w=1800',
+  'https://edge.sitecorecloud.io/sitecore2b8f4-partnerdemo8ca0-dev5eb6-ccc8/media/Project/Verticals/Financial/Personal/personal-investing.jpg?h=400&iar=0&w=600',
 ];
 const sources = process.env.NEXT_PUBLIC_SEARCH_SOURCES;
 
@@ -56,6 +56,12 @@ const Recommendations = (props: RecommendationProps) => {
   });
 
   const loading = isLoading || isFetching;
+  function getLocalUrl(url: string | undefined): string | undefined {
+    if (url && process.env.NODE_ENV === 'development') {
+      return url.replace('https://verticalsdemo-financial.vercel.app/', '/');
+    }
+    return url;
+  }
   const handleResultClick = (
     e: MouseEvent<HTMLAnchorElement>,
     result: ArticleModel,
@@ -63,7 +69,7 @@ const Recommendations = (props: RecommendationProps) => {
   ): void => {
     e.preventDefault();
     onItemClick({ id: result.id, index: index, sourceId: result.source_id });
-    router.push(result.url ?? '');
+    router.push(getLocalUrl(result.url) ?? '');
   };
 
   if (sitecoreContext.pageEditing) {
@@ -86,7 +92,7 @@ const Recommendations = (props: RecommendationProps) => {
                   <p>{result.description}</p>
                   <Link
                     className={`button button-main`}
-                    href="#"
+                    href={getLocalUrl(result.url) ?? ''}
                     onClick={(e) => handleResultClick(e, result, index)}
                   >
                     Details
