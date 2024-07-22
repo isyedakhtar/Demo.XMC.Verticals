@@ -64,7 +64,7 @@ const LoanFormSubmitHelper = ({ formId }: DynamicFormListenerProps) => {
         return () => {
           $submitButton.off('submit', handleSubmit);
         };
-      }, 1000);
+      }, 5000);
     });
   }, [formId, route?.itemLanguage]);
 
