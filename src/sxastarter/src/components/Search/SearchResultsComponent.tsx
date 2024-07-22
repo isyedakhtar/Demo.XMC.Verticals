@@ -103,7 +103,10 @@ export const SearchResultsComponent = (props: ArticleSearchResultsProps): JSX.El
         <div key={index} className="result-item">
           <h2> {result.name}</h2>
           <p>{result.description}</p>
-          <Link href="#" onClick={(e) => handleResultClick(e, result, index)}>
+          <Link
+            href={getLocalUrl(result.url) ?? ''}
+            onClick={(e) => handleResultClick(e, result, index)}
+          >
             Details
           </Link>
         </div>

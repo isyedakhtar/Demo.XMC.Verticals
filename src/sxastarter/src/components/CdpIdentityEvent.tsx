@@ -10,10 +10,10 @@ interface IdentityProps {
 }
 export function CdpIdentityEvent(props: { identityParams: IdentityProps }) {
   const { identityParams } = { ...props };
-
   context
     .getSDK('Events')
-    .then((Events) =>
+    .then((Events) => {
+      console.log('calling Events.identity');
       Events.identity({
         channel: 'WEB',
         email: identityParams.Email,
@@ -26,7 +26,7 @@ export function CdpIdentityEvent(props: { identityParams: IdentityProps }) {
           { provider: 'userId', id: identityParams.Email ?? '' },
           //{ provider: 'IdNumber', id: idNumber ?? '' },
         ],
-      })
-    )
+      });
+    })
     .catch((e) => console.debug(e));
 }

@@ -2,6 +2,7 @@
 import BYOC from 'src/byoc';
 import CdpPageView from 'components/CdpPageView';
 import FEAASScripts from 'components/FEAASScripts';
+import LoanFormSubmitHelper from 'components/LoanFormSubmitHelper';
 
 const Scripts = (): JSX.Element => {
   return (
@@ -9,6 +10,7 @@ const Scripts = (): JSX.Element => {
       <BYOC />
       <CdpPageView />
       <FEAASScripts />
+      <LoanFormSubmitHelper formId="df417f3c755a4db784ec507ea5f5daa1-aue" />
     </>
   );
 };
