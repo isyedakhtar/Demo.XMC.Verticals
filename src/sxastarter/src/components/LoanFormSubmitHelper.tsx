@@ -28,7 +28,7 @@ const LoanFormSubmitHelper = ({ formId }: DynamicFormListenerProps) => {
             return i.name === 'text_email';
           });
           const fullName = inputs.find((i) => {
-            return i.name === 'text_07762';
+            return i.name === 'text_name';
           });
 
           const [firstName, lastName] = fullName?.value?.split(' ') ?? [];
@@ -38,7 +38,7 @@ const LoanFormSubmitHelper = ({ formId }: DynamicFormListenerProps) => {
           });
 
           const phone = inputs.find((i) => {
-            return i.name === 'txt_phone';
+            return i.name === 'text_phone';
           });
 
           if (!email || !email.value) return;
