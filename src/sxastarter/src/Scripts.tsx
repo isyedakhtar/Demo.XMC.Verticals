@@ -11,6 +11,7 @@ const Scripts = (): JSX.Element => {
       <CdpPageView />
       <FEAASScripts />
       <LoanFormSubmitHelper formId="df417f3c755a4db784ec507ea5f5daa1-aue" />
+      <LoanFormSubmitHelper formId="877ef7eb68db42b8b491ede9ca71f2f8-aue" />
     </>
   );
 };
