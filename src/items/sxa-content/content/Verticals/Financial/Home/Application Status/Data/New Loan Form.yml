@@ -1,0 +1,19 @@
+﻿---
+ID: "6a10167f-17ae-4f8e-bafe-655d737ca33c"
+Parent: "a782c6d6-f51c-4202-a44e-18eaae09f9f3"
+Template: "5e27b810-83a8-4b1a-aabd-5cd1d0e8e8ea"
+Path: /sitecore/content/Verticals/Financial/Home/Application Status/Data/New Loan Form
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3b0baf86-2631-4a26-ad14-a933e8f1f5da"
+    - ID: "d663bd4f-2e16-421d-84a8-6c54fa9ddc0e"
+      Hint: Title
+      Value: Apply For Loan

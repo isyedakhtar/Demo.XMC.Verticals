@@ -16,7 +16,7 @@ SharedFields:
 - ID: "a84082c9-7112-4fe1-9401-24c5d5ff34a4"
   Hint: BackgroundImage
   Value: |
-    <image mediaid="0a676ec0-8e42-4060-ab50-40bad4accc00" />
+    <image alt='ss' mediaid="{0A676EC0-8E42-4060-AB50-40BAD4ACCC00}" />
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 650
@@ -47,23 +47,23 @@ Languages:
               s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BFD5353DB-3F57-4EFB-8586-511BA91DE16F%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
               s:ph="/headless-main/sxa-search-content/background-page-content-0-1" />
             <r
-              uid="{D94FA25C-6F68-4C39-BC66-9383337AA4FF}"
+              uid="{3506A6EF-A7E9-451C-BC2A-45A5239794FF}"
               p:after="*[1=2]"
-              s:ds="local:/Data/SearchResults 2"
+              s:ds="local:/Data/SearchResults 3"
               s:id="{7AE95748-C049-41CD-B222-D22C36442A39}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B00C85317-C460-4640-8D09-0F9B12B334B3%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles=recommendations-panel&amp;DynamicPlaceholderId=2"
-              s:ph="/headless-main/sxa-search-content/page-navigation-0-1" />
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B00C85317-C460-4640-8D09-0F9B12B334B3%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles=bordered&amp;DynamicPlaceholderId=3"
+              s:ph="/headless-main/sxa-search-content/page-content-0-1" />
           </d>
         </r>
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: "{C8FF2A20-ABA6-409B-AD69-955CD5219D07}"
+      Value: "{171CCFD4-8543-428E-9A9B-8E6557E63B6D}"
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: Searchs
+      Value: Search
     - ID: "584d07e7-07d0-4bbe-bac6-05f0e698cd37"
       Hint: Title
       Value: 
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "278bfa89-b91a-4e4d-ba46-df4d7ab0b603"
+      Value: "060b5147-f9fd-4616-b791-f3c6031a3f34"

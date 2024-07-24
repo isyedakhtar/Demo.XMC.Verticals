@@ -1,15 +1,20 @@
 ﻿---
-ID: "d26af0f1-5e54-41f0-b026-c96d4d2beea3"
+ID: "502fffa2-a841-4078-ab6d-4d5103ea6e4a"
 Parent: "b2a38fb8-2e85-4d58-afe5-c12beccbee3a"
 Template: "1226c3c7-2d1f-48f5-87b4-c1da459f05e5"
-Path: "/sitecore/content/Verticals/Financial/Home/get-a-loan"
+Path: /sitecore/content/Verticals/Financial/Home/Loan xmc forms
 SharedFields:
-- ID: "0d83e59a-c3f1-41be-81b2-762d35e0799f"
-  Hint: NavigationClass
-  Value: "{367BA3F8-234E-4964-AD4F-63C46CD259A5}"
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
   Value: 
+- ID: "1fbc6a49-6281-48ee-87e9-a3970b145adb"
+  Hint: NavigationFilter
+  Value: |
+    {E0A2A027-0932-4878-A7D6-0416D5263EFB}
+    {61BD64D6-809E-40AE-9297-2724A19329B3}
+    {D063E9D1-C7B5-4B1E-B31E-69886C9C59F5}
+    {500AE4C0-FA7B-463F-8149-EFFF7F044101}
+    {A0E7FF57-6994-4B09-AA21-104239628D5A}
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{E9B6C600-C6E8-4867-BCB7-8B0DC5F19840}"
@@ -120,7 +125,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Get a loan
+    Value: Loan xmc forms
   Versions:
   - Version: 1
     Fields:
@@ -139,11 +144,10 @@ Languages:
               <p:d />
             </r>
             <r
-              uid="{42BC8E4C-1958-4A22-8EF0-5E12B21EA66D}"
+              uid="{287F6B26-BE78-46C3-A9C7-378937E9DEF3}"
               p:after="*[1=2]"
-              s:ds="local:/Data/New Loan Form"
-              s:id="{591C0D05-650E-4567-B2C1-33BDDCFB67ED}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=23"
+              s:id="{DDC43BE7-D77A-4CE3-9282-03DD036EEC6D}"
+              s:par="ComponentName=SitecoreForm%3FformId%3Ddf417f3c755a4db784ec507ea5f5daa1-aue&amp;ComponentProps&amp;ComponentLabel=GetLoan&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=17"
               s:ph="/headless-main/sxa-page-content/background-page-content-0-1/column-2-1" />
           </d>
         </r>
@@ -161,7 +165,7 @@ Languages:
       Value: Get a loan
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0e001105-f716-46c6-87c1-65a98b17a40d"
+      Value: "28e18ebc-d58b-449c-885e-93efad6639b3"
 - Language: "fr-CA"
   Versions:
   - Version: 1

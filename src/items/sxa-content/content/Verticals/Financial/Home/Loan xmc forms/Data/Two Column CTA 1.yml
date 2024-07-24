@@ -1,0 +1,32 @@
+﻿---
+ID: "3e16c8f9-7558-4512-b5a7-487fa6f3a94a"
+Parent: "e2f59cec-2b20-44b4-a6ce-b92b0599a00f"
+Template: "1812bf3e-6bdd-466d-99b2-0d7cebb020fc"
+Path: /sitecore/content/Verticals/Financial/Home/Loan xmc forms/Data/Two Column CTA 1
+SharedFields:
+- ID: "168fed07-0f41-44f5-a14e-f134e16b1477"
+  Hint: Image1
+  Value: |
+    <image mediaid="{A4CE3822-1BFC-4876-9353-0D43914FDDC9}" alt="Woman fanning cash in front of her face" height="" width="" hspace="" vspace="" />
+- ID: "41c85ac6-5f19-48ac-9dfb-e81d5f1450f6"
+  Hint: Image2
+  Value: |
+    <image mediaid="{F64C8C16-8C71-44E1-A658-B3070574B89E}" alt="Alarm clock surrounded by stacks of coins" height="" width="" hspace="" vspace="" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "00149c37-6697-451d-a699-2327ed2d9112"
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "aec4f599-a070-4003-bd47-ce25dd85cecf"

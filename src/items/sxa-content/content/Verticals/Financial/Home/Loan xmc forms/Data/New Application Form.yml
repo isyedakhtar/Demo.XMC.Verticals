@@ -1,0 +1,38 @@
+﻿---
+ID: "61f00f14-5320-43a6-9db2-d618f1185d53"
+Parent: "e2f59cec-2b20-44b4-a6ce-b92b0599a00f"
+Template: "ae920ce6-5c6e-4842-b54c-e4b516dc0752"
+Path: /sitecore/content/Verticals/Financial/Home/Loan xmc forms/Data/New Application Form
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "69df3c6c-8839-4a83-9637-766df64dfa91"
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "50b65341-d540-4ca7-b494-1371b72e7111"
+    - ID: "d663bd4f-2e16-421d-84a8-6c54fa9ddc0e"
+      Hint: Title
+      Value: Appliquer
+    - ID: "de1ea50c-6bff-4b85-ab2f-c99e57326322"
+      Hint: Subtitle
+      Value: "Postulez en ligne pour un prêt à la consommation sans frais pour l'examen et l'approbation de la demande!"
+    - ID: "e8781b03-b723-42ee-b5c4-3acb1a639f39"
+      Hint: Footnote
+      Value: |
+        
+        En cliquant sur le bouton « Soumettre », vous acceptez les <a href="#terms-and-conditions">Conditions de traitement des données personnelles et de soumission de la demande en ligne</a>
+    - ID: "ef4297fb-1ef8-4b4e-ae14-2edb6069d9d8"
+      Hint: SubmitButton
+      Value: |
+        <link text="Soumettre" linktype="anchor" url="submit" anchor="submit" title="Submit button" class="" />

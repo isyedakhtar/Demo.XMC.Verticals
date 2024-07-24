@@ -1,0 +1,50 @@
+﻿---
+ID: "e74b2ab1-0431-4642-8fe5-3c98f7e510d5"
+Parent: "a782c6d6-f51c-4202-a44e-18eaae09f9f3"
+Template: "32f00428-21ac-4dc0-aa2b-f2e31ca3e97e"
+Path: /sitecore/content/Verticals/Financial/Home/Application Status/Data/Comparison Amount
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "139b10e3-2363-40f9-8351-59a724c1a135"
+      Hint: Amount1
+      Value: 1000
+    - ID: "22ea3b6c-7d16-47dc-b1d7-9e6686c6bd9b"
+      Hint: Amount2
+      Value: 80000
+    - ID: "55199a29-334d-41c9-b133-7163c9e82a7c"
+      Hint: Currency2
+      Value: eur
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1cb1faa8-755c-408a-99e6-851e07b2278a"
+    - ID: "ef3b1e0a-490d-4340-8ebc-5612d6be5e74"
+      Hint: Currency1
+      Value: eur
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "139b10e3-2363-40f9-8351-59a724c1a135"
+      Hint: Amount1
+      Value: 1000
+    - ID: "22ea3b6c-7d16-47dc-b1d7-9e6686c6bd9b"
+      Hint: Amount2
+      Value: 80000
+    - ID: "55199a29-334d-41c9-b133-7163c9e82a7c"
+      Hint: Currency2
+      Value: eur
+    - ID: "811c52c9-9a0d-4c2b-88c5-817193be5c7d"
+      Hint: Title1
+      Value: Montant
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "aa6a9ee5-ab9a-4592-8721-26cb91b24c6a"
+    - ID: "ef3b1e0a-490d-4340-8ebc-5612d6be5e74"
+      Hint: Currency1
+      Value: eur

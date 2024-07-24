@@ -1,0 +1,35 @@
+﻿---
+ID: "1a2e3c80-5db7-4f71-9db6-93a56693a767"
+Parent: "10f2af5e-38d1-44e8-a7ca-6a5d2614cac0"
+Template: "2dc7a13e-6753-47ef-805a-1cde39012eec"
+Path: /sitecore/content/Verticals/Financial/Home/Application Status/Data/Questions 1/Question 4
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bfc9a1c3-d522-4982-8668-311b2804b249"
+    - ID: "93ba0221-aa2a-4a04-b8f6-39c2ab65c694"
+      Hint: Question
+      Value: "How much can I borrow?"
+    - ID: "ef205dfd-6af2-4514-b694-77efa748f951"
+      Hint: Answer
+      Value: Loan amounts vary depending on factors such as your credit worthiness, income, and the type of loan you're applying for. During the application process, you'll have the opportunity to specify the amount you need, and we'll work with you to determine the appropriate loan amount.
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "28330792-659c-46d5-9334-a071f232b596"
+    - ID: "93ba0221-aa2a-4a04-b8f6-39c2ab65c694"
+      Hint: Question
+      Value: "Combien puis-je emprunter?"
+    - ID: "ef205dfd-6af2-4514-b694-77efa748f951"
+      Hint: Answer
+      Value: Les montants des prêts varient en fonction de facteurs tels que votre solvabilité, vos revenus et le type de prêt que vous demandez. Au cours du processus de demande, vous aurez l'occasion de préciser le montant dont vous avez besoin, et nous travaillerons avec vous pour déterminer le montant de prêt approprié.
