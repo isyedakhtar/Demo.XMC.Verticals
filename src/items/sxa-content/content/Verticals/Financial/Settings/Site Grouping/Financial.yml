@@ -36,7 +36,7 @@ SharedFields:
   Value: *
 - ID: "e5b5ccb5-17a1-429d-bd3e-6122b3216e52"
   Hint: TargetHostName
-  Value: 
+  Value: "verticalsdemo-financial.vercel.app"
 - ID: "f57099a3-526a-49f2-aebd-635453e48875"
   Hint: RenderingHost
   Value: Default
@@ -50,7 +50,7 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9166552d-1a21-442a-98da-3cfcf97704ed"
+      Value: "4a22aa59-06f5-4e50-bed3-7dd5064012f6"
     - ID: "96cffc48-0bd5-4f70-9b36-d49c844d51ef"
       Hint: Theme
       Value: Financial

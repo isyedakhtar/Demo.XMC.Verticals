@@ -1,0 +1,19 @@
+﻿---
+ID: "05995f46-b16c-46ae-9610-b1598e73a52d"
+Parent: "e2f59cec-2b20-44b4-a6ce-b92b0599a00f"
+Template: "5e27b810-83a8-4b1a-aabd-5cd1d0e8e8ea"
+Path: /sitecore/content/Verticals/Financial/Home/Loan xmc forms/Data/New Loan Form
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "62905f14-e107-485c-90f1-c78eb54d3f16"
+    - ID: "d663bd4f-2e16-421d-84a8-6c54fa9ddc0e"
+      Hint: Title
+      Value: Apply For Loan

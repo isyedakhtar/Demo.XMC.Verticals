@@ -1,21 +1,21 @@
 ﻿---
-ID: "d26af0f1-5e54-41f0-b026-c96d4d2beea3"
+ID: "268cd3a0-683b-4789-9fce-ad760ef42be6"
 Parent: "b2a38fb8-2e85-4d58-afe5-c12beccbee3a"
 Template: "1226c3c7-2d1f-48f5-87b4-c1da459f05e5"
-Path: "/sitecore/content/Verticals/Financial/Home/get-a-loan"
+Path: /sitecore/content/Verticals/Financial/Home/Application Status
 SharedFields:
-- ID: "0d83e59a-c3f1-41be-81b2-762d35e0799f"
-  Hint: NavigationClass
-  Value: "{367BA3F8-234E-4964-AD4F-63C46CD259A5}"
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
   Value: 
+- ID: "1fbc6a49-6281-48ee-87e9-a3970b145adb"
+  Hint: NavigationFilter
+  Value: "{E0A2A027-0932-4878-A7D6-0416D5263EFB}"
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{E9B6C600-C6E8-4867-BCB7-8B0DC5F19840}"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 700
+  Value: 625
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: 
@@ -120,7 +120,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Get a loan
+    Value: Application Status
   Versions:
   - Version: 1
     Fields:
@@ -135,33 +135,43 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
+              uid="{E22FB733-ACCD-4CB7-A565-896E4CEACC38}">
+              <p:d />
+            </r>
+            <r
               uid="{BFFCE4D9-516A-4716-9144-B1782345EF65}">
               <p:d />
             </r>
             <r
-              uid="{42BC8E4C-1958-4A22-8EF0-5E12B21EA66D}"
+              uid="{A8D0A2F4-3E55-4CAF-AFB1-4C8EB0DC84A6}"
+              p:after="r[@uid='{FF977ED9-E566-465D-9ECD-E228E98738D2}']"
+              s:id="{DDC43BE7-D77A-4CE3-9282-03DD036EEC6D}"
+              s:par="ComponentName=SitecoreForm%3FformId%3D877ef7eb68db42b8b491ede9ca71f2f8-aue&amp;ComponentProps&amp;ComponentLabel=Check%20Loan%20Application&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=17"
+              s:ph="/headless-main/sxa-page-content/background-page-content-0-1/column-1-1" />
+            <r
+              uid="{A03BEEEB-71C5-4C89-AC4F-633189ABEDDF}"
               p:after="*[1=2]"
-              s:ds="local:/Data/New Loan Form"
-              s:id="{591C0D05-650E-4567-B2C1-33BDDCFB67ED}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=23"
+              s:ds="local:/Data/Image 1"
+              s:id="{AB2EDBA0-3960-4F12-B765-579DC231894A}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B406736F9-F24E-4FE6-9CF0-7B9E4587B709%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=18"
               s:ph="/headless-main/sxa-page-content/background-page-content-0-1/column-2-1" />
           </d>
         </r>
     - ID: "247be607-394a-4bf2-8c8a-509b07025dd9"
       Hint: Title
-      Value: Consumer Loan Online
+      Value: Application Status Checker
     - ID: "3d30539f-d403-496a-a512-ac885b1a2f8b"
       Hint: Content
-      Value: For all your wishes – we have the right solution
+      Value: <p>For all your wishes – we have the right solution</p>
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{171CCFD4-8543-428E-9A9B-8E6557E63B6D}"
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: Get a loan
+      Value: App Status
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0e001105-f716-46c6-87c1-65a98b17a40d"
+      Value: "dc3a2da8-c560-4c3d-8a47-79e7a9c1ab59"
 - Language: "fr-CA"
   Versions:
   - Version: 1

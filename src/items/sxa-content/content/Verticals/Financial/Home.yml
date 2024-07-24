@@ -322,13 +322,6 @@ Languages:
                 </ruleset>
               </rls>
             </r>
-            <r
-              uid="{F54532F1-4B5F-409E-BBBD-41408A1D1A1E}"
-              p:after="r[@uid='{D54D53B4-1AA4-4998-9BDF-EB934C32CFB6}']"
-              s:ds="local:/Data/Image 1"
-              s:id="{AB2EDBA0-3960-4F12-B765-579DC231894A}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B406736F9-F24E-4FE6-9CF0-7B9E4587B709%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=30"
-              s:ph="headless-main" />
           </d>
         </r>
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
@@ -339,7 +332,7 @@ Languages:
       Value: Financial
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1df83ca1-1bfc-40ea-a31c-0d09369b71d3"
+      Value: "23acea5a-4945-4ed1-b43e-69668e7ebf63"
     - ID: "d77eab5a-d654-445f-b15c-d32283737e1f"
       Hint: Title
       Value: Financial

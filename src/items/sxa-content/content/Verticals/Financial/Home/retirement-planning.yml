@@ -16,7 +16,7 @@ SharedFields:
 - ID: "df6dc0ca-f8ee-493a-a920-f2b710f08452"
   Hint: BackgroundImage
   Value: |
-    <image mediaid="{ACD06DBF-C48E-47AE-9754-BB27AC58FB76}" alt="Grassy meadow with faded blur" height="" width="" hspace="" vspace="" />
+    <image mediaid="{ACD06DBF-C48E-47AE-9754-BB27AC58FB76}" alt="Grassy meadow with faded blur" height="" width="" hspace="" vspace=""/>
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -91,10 +91,10 @@ Languages:
       Value: "{171CCFD4-8543-428E-9A9B-8E6557E63B6D}"
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: Retirement planning
+      Value: Retirement
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b3be5b8a-0d83-4f71-b67a-e0f144f2a8cd"
+      Value: "0fc30409-1969-4f8f-9bf0-cc5044d266ec"
 - Language: "fr-CA"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
