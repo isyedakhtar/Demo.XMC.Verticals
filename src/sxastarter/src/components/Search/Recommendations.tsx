@@ -12,6 +12,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
 import { MouseEvent } from 'react';
+import { removeBasePathFromUrl } from 'lib/search/utilities';
 
 type ArticleModel = {
   id: string;
@@ -56,12 +57,6 @@ const Recommendations = (props: RecommendationProps) => {
   });
 
   const loading = isLoading || isFetching;
-  function getLocalUrl(url: string | undefined): string | undefined {
-    if (url && process.env.NODE_ENV === 'development') {
-      return url.replace('https://verticalsdemo-financial.vercel.app/', '/');
-    }
-    return url;
-  }
   const handleResultClick = (
     e: MouseEvent<HTMLAnchorElement>,
     result: ArticleModel,
@@ -69,7 +64,7 @@ const Recommendations = (props: RecommendationProps) => {
   ): void => {
     e.preventDefault();
     onItemClick({ id: result.id, index: index, sourceId: result.source_id });
-    router.push(getLocalUrl(result.url) ?? '');
+    router.push(removeBasePathFromUrl(result.url ?? ''));
   };
 
   if (sitecoreContext.pageEditing) {
@@ -92,7 +87,7 @@ const Recommendations = (props: RecommendationProps) => {
                   <p>{result.description}</p>
                   <Link
                     className={`button button-main`}
-                    href={getLocalUrl(result.url) ?? ''}
+                    href={removeBasePathFromUrl(result.url ?? '')}
                     onClick={(e) => handleResultClick(e, result, index)}
                   >
                     Details

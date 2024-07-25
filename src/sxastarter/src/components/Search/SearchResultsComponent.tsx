@@ -12,6 +12,7 @@ import Link from 'next/link';
 import { useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
 import { MouseEvent } from 'react';
 import { useRouter } from 'next/navigation';
+import { removeBasePathFromUrl } from 'lib/search/utilities';
 
 type ArticleModel = {
   id: string;
@@ -72,7 +73,7 @@ export const SearchResultsComponent = (props: ArticleSearchResultsProps): JSX.El
     e.preventDefault();
     if (result.url) {
       onItemClick({ id: result.id, index: index, sourceId: result.source_id });
-      router.push(getLocalUrl(result.url) ?? '');
+      router.push(removeBasePathFromUrl(result.url ?? ''));
     }
   }
   if (sitecoreContext.pageEditing || !articles?.length)
@@ -84,13 +85,6 @@ export const SearchResultsComponent = (props: ArticleSearchResultsProps): JSX.El
         <div className="no-results">{props.emptyMessage}</div>
       </div>
     );
-
-  function getLocalUrl(url: string | undefined): string | undefined {
-    if (url && process.env.NODE_ENV === 'development') {
-      return url.replace('https://verticalsdemo-financial.vercel.app/', '/');
-    }
-    return url;
-  }
 
   return (
     <div ref={widgetRef} className="search-results-container">
@@ -104,7 +98,7 @@ export const SearchResultsComponent = (props: ArticleSearchResultsProps): JSX.El
           <h2> {result.name}</h2>
           <p>{result.description}</p>
           <Link
-            href={getLocalUrl(result.url) ?? ''}
+            href={removeBasePathFromUrl(result.url ?? '')}
             onClick={(e) => handleResultClick(e, result, index)}
           >
             Details

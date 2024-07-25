@@ -1,6 +1,7 @@
 import { useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
 import { PreviewSearchInitialState, PreviewSearchWidgetQuery } from '@sitecore-search/react';
 import { useRouter } from 'next/navigation';
+import { removeBasePathFromUrl } from 'lib/search/utilities';
 
 import {
   FilterAnd,
@@ -27,14 +28,6 @@ interface Props {
 
 export const PreviewSearch = ({ defaultItemsPerPage }: Props) => {
   const router = useRouter();
-
-  function getLocalUrl(url: string | undefined): string | undefined {
-    if (url && process.env.NODE_ENV === 'development') {
-      return url.replace('https://verticalsdemo-financial.vercel.app/', '/');
-    }
-    return url;
-  }
-
   const [search, setSearch] = useState<string>('');
   const [isSearching, setIsSearching] = useState<boolean>();
   const sources = process.env.NEXT_PUBLIC_SEARCH_SOURCES;
@@ -94,7 +87,7 @@ export const PreviewSearch = ({ defaultItemsPerPage }: Props) => {
 
   function handleRedirect(article: ArticleModel, index: number): void {
     onItemClick({ id: article.id, index, sourceId: article.source_id });
-    router.push(getLocalUrl(article.url) ?? '');
+    router.push(removeBasePathFromUrl(article.url) ?? '');
   }
 
   return (
