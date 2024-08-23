@@ -31,9 +31,9 @@ type RecommendationProps = {
 type InitialState = RecommendationInitialState<'itemsPerPage'>;
 //const DEFAULT_IMG_URL = 'https://placehold.co/500x300?text=No%20Image';
 const Images = [
-  'https://edge.sitecorecloud.io/sitecore2b8f4-partnerdemo8ca0-dev5eb6-ccc8/media/Project/Verticals/Financial/Personal/personal-borrowing.jpg?h=400&iar=0&w=600',
-  'https://edge.sitecorecloud.io/sitecore2b8f4-partnerdemo8ca0-dev5eb6-ccc8/media/Project/Verticals/Financial/About-us/small-business-mobile-hero-1800x700.jpg?h=700&iar=0&w=1800',
-  'https://edge.sitecorecloud.io/sitecore2b8f4-partnerdemo8ca0-dev5eb6-ccc8/media/Project/Verticals/Financial/Personal/personal-investing.jpg?h=400&iar=0&w=600',
+  'https://edge.sitecorecloud.io/professiona63d4-foundation25a7b-devf8f6-fb48/media/Project/Verticals/Financial/Personal/personal-borrowing.jpg?h=400&iar=0&w=600',
+  'https://edge.sitecorecloud.io/professiona63d4-foundation25a7b-devf8f6-fb48/media/Project/Verticals/Financial/About-us/small-business-mobile-hero-1800x700.jpg?h=700&iar=0&w=1800',
+  'https://edge.sitecorecloud.io/professiona63d4-foundation25a7b-devf8f6-fb48/media/Project/Verticals/Financial/Personal/personal-investing.jpg?h=400&iar=0&w=600',
 ];
 const sources = process.env.NEXT_PUBLIC_SEARCH_SOURCES;
 
